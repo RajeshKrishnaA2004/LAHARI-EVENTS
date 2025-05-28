@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lahari Events</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="transparent">
+      <div class="logo">LAHARI</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 1. Home -->
+    <section id="home" class="section hero">
+      <div class="hero-content">
+        <h1>Lahari Events</h1>
+        <hr class="underline" />
+        <p>Crafting Celebrations with Heart and Elegance</p>
+        <button onclick="scrollToSection('contact')">CONNECT WITH US</button>
+      </div>
+    </section>
+
+    <!-- 2. About -->
+    <section id="about" class="section about-section" style="margin-top: 100px">
+      <div class="about-overlay">
+        <div class="about-card">
+          <h1>About Us</h1>
+          <div class="underline"></div>
+          <p>
+            Lahari is dedicated to designing unforgettable events that celebrate
+            life's special moments with flair and grace. With over eight
+            standout events under our belt, we excel in meticulous planning,
+            innovative design, and seamless execution. Our skilled team
+            orchestrates a variety of events, always ensuring each one is a true
+            reflection of the client's vision while incorporating our hallmark
+            style of warmth and elegance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Discover Magic -->
+    <section class="discover-section">
+      <video autoplay muted loop class="background-video">
+        <source src="image/l4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="discover-content">
+        <h2>Discover Magic</h2>
+        <div class="underline"></div>
+        <p>Transforming Spaces into Celebrations</p>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <h2>SERVICES</h2>
+      <div class="underline"></div>
+
+      <div class="service-box">
+        <div class="service-item">
+          <img src="image/l5.jpeg" alt="Birthday Parties" />
+          <h3>Birthday Parties</h3>
+          <p>
+            From whimsical children's parties to sophisticated adult soirées, we
+            create birthday celebrations that leave lasting memories.
+          </p>
+        </div>
+        <div class="service-item">
+          <img src="image/l6.jpeg" alt="Wedding Anniversaries" />
+          <h3>Wedding Anniversaries</h3>
+          <p>
+            Celebrate your love story with an anniversary event that reflects
+            your unique journey together.
+          </p>
+        </div>
+        <div class="service-item">
+          <img src="image/l7.jpeg" alt="Cultural Celebrations" />
+          <h3>Cultural Celebrations</h3>
+          <p>
+            Enrich your cultural milestones with ceremonies that honor
+            traditions while adding a modern touch.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 & 6. FAQ -->
+    <section id="faq" class="section faq">
+      <h2>F.A.Q</h2>
+      <div class="underline"></div>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h3>
+            What is the cost of organizing an event for a specific duration?
+          </h3>
+          <p>
+            The pricing depends on the event type, duration, location, and
+            specific requirements. For a more accurate quote, please contact us
+            with your event details and expected timeline.
+          </p>
+          <p>
+            <strong
+              >Our general cost is
+              <u style="color: #a52a2a">699 for 130min</u></strong
+            >
+          </p>
+        </div>
+        <div class="faq-card">
+          <h3>
+            Is a bouquet included in the package, or available separately?
+          </h3>
+          <p>
+            <strong style="color: #a52a2a">Bouquets</strong> can be included as
+            part of our standard packages or requested separately. We offer
+            various styles suitable for different occasions.
+          </p>
+        </div>
+        <div class="faq-card">
+          <h3>
+            Do you provide <span style="color: #a52a2a">bubble entry</span> for
+            special events?
+          </h3>
+          <p>
+            Yes, we offer bubble entry effects as part of our premium welcome
+            experiences. This can be added as an optional feature to any event
+            package.
+          </p>
+        </div>
+        <div class="faq-card">
+          <h3>
+            Do you offer
+            <span style="color: #a52a2a">customized table designs</span>?
+          </h3>
+          <p>
+            Yes, we provide personalized table setups and centerpieces to match
+            your event's theme. From elegant to quirky, we bring your vision to
+            life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Testimonials -->
+    <section id="testimonials" class="section testimonials">
+      <h2>TESTIMONIALS</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <div class="stars">★★★★★</div>
+          <p class="quote">
+            Our wedding anniversary celebration was perfect, thanks to Lahari's
+            exceptional planning and execution. Highly recommend!
+          </p>
+          <p class="author">— James D., Satisfied Husband</p>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="quote">
+            The baby shower thrown by Lahari was heartfelt and beautifully
+            organized. They truly made the day special for our family.
+          </p>
+          <p class="author">— Maya R., Expectant Mother</p>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="quote">
+            Every Lahari event is like a dream. Their attention to detail and
+            emotional touch is unmatched.
+          </p>
+          <p class="author">— Ananya V., Happy Client</p>
+        </div>
+
+        <div class="nav-buttons">
+          <button id="prev">&#10094;</button>
+          <button id="next">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Contact Form -->
+    <section id="contact" class="section contact">
+      <h2>CONTACT</h2>
+      <form action="https://formspree.io/f/xdkgqwyl" method="POST">
+        <div class="form-row">
+          <input type="text" name="Name: " placeholder="Name" required />
+          <input type="text" name="Phone: " placeholder="Phone" required />
+          <input
+            type="email"
+            name="E-mail: "
+            placeholder="Email address"
+            required
+          />
+        </div>
+        <textarea placeholder="Message" name="Message: " required></textarea>
+        <button type="submit">CONTACT US</button>
+      </form>
+    </section>
+
+    <!-- 9. Location Info -->
+    <section class="location-section">
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>
+          <strong>Address:</strong> RBI Layout, Phase 7, J. P. Nagar, Bangalore,
+          Karnataka, India
+        </p>
+        <p>
+          <strong>Landmark:</strong> Opposite to Pai International and Mani's
+          Biryani
+        </p>
+        <p>
+          <strong>Phone:</strong>
+          <a href="tel:+919886509990">+91-9886509990</a>,
+          <a href="tel:+919762167988">+91-9762167988</a>
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:Laharievents56@gmail.com">Laharievents56@gmail.com</a>
+        </p>
+        <p><strong>Working Hours:</strong> Mon–Sun: 08:00–19:00</p>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.581331862062!2d77.58020687501583!3d12.90067548740959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158dfb2bc7ef%3A0x962b7a0144f0d4f6!2sRBI%20Layout%2C%20JP%20Nagar%207th%20Phase!5e0!3m2!1sen!2sin!4v1620823601575!5m2!1sen!2sin"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Lahari Events. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+        easing: "ease-in-out",
+      });
+    </script>
+  </body>
+</html>
