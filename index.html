@@ -61,7 +61,7 @@
     <section class="discover-section">
       <video autoplay muted loop class="background-video">
         <source src="image/l4.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        Your browser does not support this video .
       </video>
 
       <div class="discover-content">
@@ -70,13 +70,13 @@
         <p>Transforming Spaces into Celebrations</p>
       </div>
     </section>
-
+    <!--4. Services -->
     <section id="services" class="section services">
       <h2>SERVICES</h2>
       <div class="underline"></div>
 
       <div class="service-box">
-        <div class="service-item">
+        <div class="service-item" onclick="openGallery('birthday')">
           <img src="image/l5.jpeg" alt="Birthday Parties" />
           <h3>Birthday Parties</h3>
           <p>
@@ -84,7 +84,7 @@
             create birthday celebrations that leave lasting memories.
           </p>
         </div>
-        <div class="service-item">
+        <div class="service-item" onclick="openGallery('anniversary')">
           <img src="image/l6.jpeg" alt="Wedding Anniversaries" />
           <h3>Wedding Anniversaries</h3>
           <p>
@@ -92,12 +92,20 @@
             your unique journey together.
           </p>
         </div>
-        <div class="service-item">
+        <div class="service-item" onclick="openGallery('cultural')">
           <img src="image/l7.jpeg" alt="Cultural Celebrations" />
           <h3>Cultural Celebrations</h3>
           <p>
             Enrich your cultural milestones with ceremonies that honor
             traditions while adding a modern touch.
+          </p>
+        </div>
+        <div class="service-item" onclick="openGallery('baby')">
+          <img src="image/l8.jpeg" alt="Cultural Celebrations" />
+          <h3>Baby Showers</h3>
+          <p>
+            Embrace the joy of parenthood with celebrations that blend heartfelt 
+            traditions and elegant décor, creating lasting memories for your growing family.
           </p>
         </div>
       </div>
@@ -148,14 +156,47 @@
         </div>
         <div class="faq-card">
           <h3>
-            Do you offer
-            <span style="color: #a52a2a">customized table designs</span>?
+            Can you arrange a
+            <span style="color: #a52a2a">cake</span> for the event?
           </h3>
           <p>
-            Yes, we provide personalized table setups and centerpieces to match
-            your event's theme. From elegant to quirky, we bring your vision to
-            life.
+            Absolutely! We can provide a custom cake upon request.Our standard
+            offering: 500g cake for ₹499 — perfect for small celebrations or as
+            an add-on surprise!
           </p>
+          </div>
+        <div class="faq-card">
+          <h3>
+            Is
+            <span style="color: #a52a2a">bubble entry available</span> for
+            parties and celebrations ?
+          </h3>
+          <p>
+            Yes! Our bubble entry experience, available at just ₹149, adds charm
+            and fun to any event—especially birthdays and baby showers.
+          </p>
+        </div>
+          <div class="faq-card">
+          <h3>Do your packages include decoration?</h3>
+          <p>
+            Basic
+            <span style="color: #a52a2a"><b>decoration is available</b></span> and can
+            be added to any package for just ₹149. You can also customize the
+            theme to suit your celebration's vibe.
+          </p>
+          </div>
+          <div class="faq-card">
+          <h3>
+            Are
+            <span style="color: #a52a2a">snacks and beverages</span> part of the
+            event arrangements?
+          </h3>
+          <p>
+            Yes! We offer a curated selection of snacks and beverages,
+            customizable to your event type. Options are available across all
+            our event packages.
+          </p>
+          </div>
         </div>
       </div>
     </section>
@@ -199,18 +240,23 @@
     <!-- 8. Contact Form -->
     <section id="contact" class="section contact">
       <h2>CONTACT</h2>
-      <form action="https://formspree.io/f/xdkgqwyl" method="POST">
+      <form
+        action="https://formspree.io/f/xdkgqwyl
+      "
+        method="POST"
+      >
         <div class="form-row">
-          <input type="text" name="Name: " placeholder="Name" required />
-          <input type="text" name="Phone: " placeholder="Phone" required />
+          <input type="text" name="Name: " placeholder="Name" autocomplete="Name" required/>
+          <input type="text" name="Phone: " placeholder="Phone" autocomplete="Phone" required />
           <input
             type="email"
             name="E-mail: "
             placeholder="Email address"
+            autocomplete="email"
             required
           />
         </div>
-        <textarea placeholder="Message" name="Message: " required></textarea>
+        <textarea placeholder="Message" name="Message: " required>Hi Lahari Team, I’m interested in organizing a celebration. Please get in touch with me with more details. Thanks!</textarea>
         <button type="submit">CONTACT US</button>
       </form>
     </section>
@@ -251,7 +297,8 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 Lahari Events. All rights reserved.</p>
+      <p>&copy; 2025 Lahari Events. All rights reserved.<a href="#" id="open-terms"> Terms & Conditions</a>
+  </p></p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
@@ -261,5 +308,76 @@
         easing: "ease-in-out",
       });
     </script>
-  </body>
+    <div id="terms-modal" class="modal">
+  <div class="modal-content">
+    <h2>Terms & Conditions</h2>
+    <ul>
+      <li>	REQUIRED VALID ID PROOFS OF THE GUESTS  WHO VISITS.</li>
+      <li>	SMOKING/DRINKING IS NOT ALLOWED IN THE PRIVATE SPACE PROVIDED.</li>
+      <li>  ANY DAMAGE CAUSED TO THE PRIVATE SPACE PROVIDED OR THE MATERIALS USED HAS TO BE REIMBURSED.</li>
+      <li>	KINDLY MAINTAIN CLEANLINES INSIDE.</li>
+      <li>	COUPLES BELOW 18YRS ARE NOT ALLOWED, ALLOWED ONLY WITH THE GROUP WITH VALID IDENTITIES.</li>
+    </ul>
+    <h2>REFUND POLICY</h2>
+    <p>WE COLLECT 50% OF THE TOTAL AMOUNT AS AN ADVANCE FOR THE RESERVATION. THIS ADVANCE AMOUNT IS FULLY REFUNDABLE ONLY IF WE ARE INFORMED 24 HRS BEFORE THE LOT BOOKING DATE.
+      IF THE SPACE IS BOOKES ON THE SAME DAY AND YOU WISH TO CANCEL THE SLOT THERE WILL BE NO REFUND FOR THE AMOUNT PAID.
+    </p>
+    <button id="accept-terms">Accept</button>
+  </div>
+</div>
+<script>
+document.getElementById("open-terms").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("terms-modal").style.display = "block";
+});
+
+document.getElementById("accept-terms").addEventListener("click", function () {
+  document.getElementById("terms-modal").style.display = "none";
+});
+</script>
+<div id="gallery-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-gallery" style="float:right;cursor:pointer;font-size:1.5rem">&times;</span>
+    <h2 id="gallery-title">Gallery</h2>
+    <div id="gallery-images" class="gallery-grid">
+      <!-- Images will be injected here -->
+    </div>
+  </div>
+</div>
+<script>
+const galleryModal = document.getElementById("gallery-modal");
+const galleryImages = document.getElementById("gallery-images");
+const galleryTitle = document.getElementById("gallery-title");
+
+document.getElementById("close-gallery").addEventListener("click", () => {
+  galleryModal.style.display = "none";
+  galleryImages.innerHTML = ""; // Clear images
+});
+
+function openGallery(type) {
+  const images = {
+    birthday: ["image/l2.jpeg", "image/l5.jpeg"],
+    anniversary: ["image/l1.jpeg", "image/l3.jpeg"],
+    cultural: ["image/l7.jpeg", "img/c2.jpg", "img/c3.jpg"],
+    baby: ["image/l8.jpeg", "img/baby2.jpg"]
+  };
+
+  const titles = {
+    birthday: "Birthday Party Gallery",
+    anniversary: "Anniversary Moments",
+    cultural: "Cultural Celebrations",
+    baby: "Baby Showers"
+  };
+
+  galleryTitle.textContent = titles[type] || "Gallery";
+  images[type]?.forEach((src) => {
+    const img = document.createElement("img");
+    img.src = src;
+    galleryImages.appendChild(img);
+  });
+
+  galleryModal.style.display = "block";
+}
+</script>
+</body>
 </html>
