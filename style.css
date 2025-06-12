@@ -170,13 +170,7 @@ nav ul li a {
 /* Responsive */
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 60px;
-    right: 0;
-    padding: 1rem;
-    display: none;
+    display: none !important;
   }
 
   nav ul.show {
@@ -283,7 +277,11 @@ nav ul li a {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+.service-item:hover img {
+  transform: scale(1.1);
 }
 
 .service-item h3 {
@@ -977,4 +975,102 @@ nav ul li a {
     text-align: center;
     max-width: 90%;
   }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+  color: #a52a2a;
+  text-align: center;
+}
+
+.modal-content ul {
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-content li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.modal-content button {
+  display: block;
+  margin: auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #a52a2a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal-content button:hover {
+  background-color: #8b1a1a;
+}
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background: white;
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#gallery-title {
+  text-align: center;
+  color: #a52a2a;
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
