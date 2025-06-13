@@ -16,8 +16,10 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="transparent">
-      <div class="logo">LAHARI</div>
+    <div id="top-anchor"></div>
+    <nav class="transparent"> 
+      <div class="logo"><a href="#top-anchor" style="color: white; text-decoration: none; font-weight: bold;">LAHARI</a></div>
+      
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -129,7 +131,7 @@
           <p>
             <strong
               >Our general cost is
-              <u style="color: #a52a2a">699 for 130min</u></strong
+              <u style="color: #a52a2a">699 for 1:30min</u></strong
             >
           </p>
         </div>
@@ -156,6 +158,17 @@
         </div>
         <div class="faq-card">
           <h3>
+            Do you provide <span style="color: #a52a2a">smoke entry</span> for
+            parties and celebrations?
+          </h3>
+          <p>
+            Yes! Our smoke entry service is available for just ₹149 and brings a dramatic 
+            and unforgettable flair to your event—perfect for weddings, stage entries, and 
+            grand celebrations.
+          </p>
+        </div>
+        <div class="faq-card">
+          <h3>
             Can you arrange a
             <span style="color: #a52a2a">cake</span> for the event?
           </h3>
@@ -165,17 +178,7 @@
             an add-on surprise!
           </p>
           </div>
-        <div class="faq-card">
-          <h3>
-            Is
-            <span style="color: #a52a2a">bubble entry available</span> for
-            parties and celebrations ?
-          </h3>
-          <p>
-            Yes! Our bubble entry experience, available at just ₹149, adds charm
-            and fun to any event—especially birthdays and baby showers.
-          </p>
-        </div>
+        
           <div class="faq-card">
           <h3>Do your packages include decoration?</h3>
           <p>
@@ -211,7 +214,7 @@
             Our wedding anniversary celebration was perfect, thanks to Lahari's
             exceptional planning and execution. Highly recommend!
           </p>
-          <p class="author">— James D., Satisfied Husband</p>
+          <p class="author">— Amith D., Satisfied Husband</p>
         </div>
         <div class="testimonial">
           <div class="stars">★★★★★</div>
@@ -356,10 +359,10 @@ document.getElementById("close-gallery").addEventListener("click", () => {
 
 function openGallery(type) {
   const images = {
-    birthday: ["image/l2.jpeg", "image/l5.jpeg"],
-    anniversary: ["image/l1.jpeg", "image/l3.jpeg"],
-    cultural: ["image/l7.jpeg", "img/c2.jpg", "img/c3.jpg"],
-    baby: ["image/l8.jpeg", "img/baby2.jpg"]
+    birthday: ["image/l2.jpeg", "image/l9.jpeg", "image/l10.jpeg"],
+    anniversary: ["image/l1.jpeg", "image/l3.jpeg", "image/l11.jpeg", "image/l12.jpeg"],
+    cultural: ["image/l7.jpeg"],
+    baby: ["image/l8.jpeg"]
   };
 
   const titles = {
